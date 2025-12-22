@@ -140,11 +140,10 @@
   animation: float 6s ease-in-out infinite;
 }
 
-/* fade + slide saat load */
 @keyframes fadeUp {
   from {
     opacity: 0;
-    transform: translateY(16px);
+    transform: translateY(24px);
   }
   to {
     opacity: 1;
@@ -152,7 +151,18 @@
   }
 }
 
-.animate-fade-up {
-  animation: fadeUp 0.8s ease-out forwards;
+@keyframes fadeSide {
+  from {
+    opacity: 0;
+    transform: translateX(24px) rotate(3deg);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) rotate(3deg);
+  }
 }
 
+.text-justify {
+  text-align: justify;
+  text-justify: inter-word;
+}
