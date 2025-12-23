@@ -53,7 +53,7 @@ export default function Home() {
                 Hi, I’m <span className="text-purple-600 dark:text-purple-400"> Nadhifatus Aulia Enggarsya</span>👋
               </h1>
               <h2 className="opacity-0 mt-3 text-xl font-bold text-zinc-600 dark:text-zinc-400 animate-[fadeUp_0.8s_ease-out_0.25s_forwards]">
-                Informatics Engineering Student, Frontend Enthusiast & Administration Enthusiast
+                Informatics Engineering Student, Frontend & Administration Enthusiast
               </h2>
               <p className="opacity-0 mt-2 max-w-xl text-base leading-relaxed text-zinc-600 dark:text-zinc-400 text-justify md:text-left animate-[fadeUp_0.8s_ease-out_0.4s_forwards]">
                 An Informatics Engineering student with a strong interest in frontend development
@@ -181,7 +181,7 @@ export default function Home() {
                 title: "JTI Care",
                 desc: "A web-based donation platform for the Information Technology Department, built with Laravel 10 and Midtrans to support secure and accessible donations for students in need.",
                 tech: ["PHP", "Laravel", "Tailwind CSS", "JavaScript"],
-                image: "/image/.png",
+                image: "/image/JTICare.jpeg",
                 link: "https://github.com/nadhiuuu/jticare",
               },
             ].map((project, i) => (
@@ -227,7 +227,7 @@ export default function Home() {
                       className="flex w-full items-center justify-center gap-2 rounded-xl bg-zinc-900 px-4 py-2.5 text-sm font-medium text-white transition-all hover:bg-zinc-700 active:scale-95 dark:bg-white dark:text-black dark:hover:bg-zinc-200"
                     >
                       <Github className="h-4 w-4" />
-                      GitHub
+                      Code
                     </a>
                   </div>
                 </div>
