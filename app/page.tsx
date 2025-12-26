@@ -2,7 +2,8 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import { Sparkles, GraduationCap, Layers, Code, Mail, FileText, Github, ExternalLink} from "lucide-react";
+import { Sparkles, GraduationCap, Layers, Code, Mail, FileText, Github, Instagram} from "lucide-react";
+import ExperienceItem from "@/components/ui/experience-item";
 
 // --- Komponen Sparkle Background ---
 const BackgroundSparkles = () => {
@@ -46,7 +47,7 @@ export default function Home() {
       <BackgroundSparkles />
       <div className="relative z-10 mx-auto max-w-5xl px-6">
         {/* ================= HERO SECTION ================= */}
-        <section id="home" className="flex min-h-[90vh] flex-col justify-center pt-20">
+        <section id="home" className="scroll-mt-20 flex min-h-[90vh] flex-col justify-center pt-20">
           <div className="flex flex-col-reverse items-center justify-between gap-12 md:flex-row">
             <div className="flex flex-col text-center md:text-left">
               <h1 className="opacity-0 text-4xl font-bold tracking-tight sm:text-5xl animate-[fadeUp_0.8s_ease-out_0.1s_forwards]">
@@ -62,7 +63,7 @@ export default function Home() {
                 user-friendly digital solutions that improve efficiency and usability.
               </p>
               <div className="opacity-0 mt-5 flex justify-center md:justify-start gap-4 animate-[fadeUp_0.8s_ease-out_0.55s_forwards]">
-                <a href="#cv" className="inline-flex items-center gap-2 rounded-full bg-zinc-900 px-6 py-2.5 text-sm font-medium text-white transition-colors hover:bg-zinc-700 dark:bg-white dark:text-black dark:hover:bg-zinc-200">
+                <a href="#cv" className="inline-flex items-center gap-2 rounded-full bg-zinc-900 px-6 py-2.5 text-sm font-medium text-white transition-colors hover:bg-purple-500 dark:bg-white dark:text-black dark:hover:bg-purple-500">
                   <FileText className="h-4 w-4" />Curriculum Vitae
                 </a>
               </div>
@@ -78,97 +79,124 @@ export default function Home() {
         </section>
 
         {/* ================= SECTION EDUCATION ================= */}
-        <section id="education" className="py-10">
-          <div className="flex items-center gap-2 mb-5">
-            <GraduationCap className="text-purple-600 w-8 h-8" />
+        <section id="education" className="scroll-mt-20 py-10">
+          <div className="mb-5 flex items-center gap-2">
+            <GraduationCap className="h-8 w-8 text-purple-600" />
             <h2 className="text-3xl font-bold tracking-tight">Education</h2>
           </div>
           <div className="grid gap-6">
-            <div className="group relative rounded-2xl border border-zinc-100 bg-white p-5 transition-all duration-300 hover:border-purple-200 hover:shadow-xl hover:shadow-purple-500/5 dark:border-zinc-800 dark:bg-zinc-900/50">
-              <div className="flex items-start gap-4">
-                <div className="relative h-12 w-12 flex-shrink-0 overflow-hidden rounded-xl border border-zinc-100 bg-zinc-50 p-2 dark:border-zinc-700 dark:bg-zinc-800">
-                  <Image src="/image/Logo-POLIJE.png" alt="Logo Polije" fill className="object-contain p-1" />
-                </div>
-                <div className="flex-1">
-                  <div className="flex flex-col md:flex-row md:items-center justify-between gap-1">
-                    <h3 className="text-lg font-bold text-zinc-800 dark:text-zinc-100 group-hover:text-purple-600 transition-colors">
-                      Politeknik Negeri Jember
-                    </h3>
-                    <span className="text-sm font-medium text-zinc-400">2023 — Present</span>
+            <a
+              href="https://www.polije.ac.id"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Politeknik Negeri Jember Website"
+              className="group block focus:outline-none"
+            >
+              <div className="relative rounded-2xl border border-zinc-100 bg-white p-5 transition-all duration-200 ease-out
+                hover:-translate-y-1 hover:border-purple-200 hover:shadow-xl hover:shadow-purple-500/5
+                active:translate-y-0 active:scale-[0.97] active:shadow-md
+                dark:border-zinc-800 dark:bg-zinc-900/50"
+              >
+                <div className="flex items-start gap-4">
+                  <div className="relative h-12 w-12 flex-shrink-0 overflow-hidden rounded-xl border border-zinc-100 bg-zinc-50 p-2 dark:border-zinc-700 dark:bg-zinc-800">
+                    <Image
+                      src="/image/Logo-POLIJE.png"
+                      alt="Logo Politeknik Negeri Jember"
+                      fill
+                      className="object-contain p-1"
+                    />
                   </div>
-                  <p className="text-zinc-600 dark:text-zinc-400 font-medium">Bachelor of Informatics Engineering</p>
+                  <div className="flex-1">
+                    <div className="flex flex-col gap-1 md:flex-row md:items-center md:justify-between">
+                      <h3 className="text-lg font-bold text-zinc-800 transition-colors group-hover:text-purple-600 dark:text-zinc-100 dark:group-hover:text-purple-600">
+                        Politeknik Negeri Jember
+                      </h3>
+                      <span className="text-sm font-medium text-zinc-400">
+                        2023 — Present
+                      </span>
+                    </div>
+                    <p className="font-medium text-zinc-600 dark:text-zinc-400">
+                      Bachelor of Informatics Engineering
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="group relative rounded-2xl border border-zinc-100 bg-white p-5 transition-all duration-300 hover:border-purple-200 hover:shadow-xl hover:shadow-purple-500/5 dark:border-zinc-800 dark:bg-zinc-900/50">
-              <div className="flex items-start gap-4">
-                <div className="relative h-12 w-12 flex-shrink-0 overflow-hidden rounded-xl border border-zinc-100 bg-zinc-50 p-2 dark:border-zinc-700 dark:bg-zinc-800">
-                  <Image src="/image/Logo-SMASA.png" alt="Logo SMASA" fill className="object-contain p-1"/>
-                </div>
-                <div className="flex-1">
-                  <div className="flex flex-col md:flex-row md:items-center justify-between gap-1">
-                    <h3 className="text-lg font-bold text-zinc-800 dark:text-zinc-100 group-hover:text-purple-600 transition-colors">
-                      SMA Negeri 1 Nganjuk
-                    </h3>
-                    <span className="text-sm font-medium text-zinc-400">2020 — 2023</span>
+            </a>
+            <a
+              href="https://www.smasa-nganjuk.sch.id/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="SMA Negeri 1 Nganjuk Website"
+              className="group block focus:outline-none"
+            >
+              <div className="relative rounded-2xl border border-zinc-100 bg-white p-5 transition-all duration-200 ease-out
+                hover:-translate-y-1 hover:border-purple-200 hover:shadow-xl hover:shadow-purple-500/5
+                active:translate-y-0 active:scale-[0.97] active:shadow-md
+                dark:border-zinc-800 dark:bg-zinc-900/50"
+              >
+                <div className="flex items-start gap-4">
+                  <div className="relative h-12 w-12 flex-shrink-0 overflow-hidden rounded-xl border border-zinc-100 bg-zinc-50 p-2 dark:border-zinc-700 dark:bg-zinc-800">
+                    <Image
+                      src="/image/Logo-SMASA.png"
+                      alt="Logo SMA Negeri 1 Nganjuk"
+                      fill
+                      className="object-contain p-1"
+                    />
                   </div>
-                  <p className="text-zinc-600 dark:text-zinc-400 font-medium">MIPA - Mathematics and Science</p>
+                  <div className="flex-1">
+                    <div className="flex flex-col gap-1 md:flex-row md:items-center md:justify-between">
+                      <h3 className="text-lg font-bold text-zinc-800 transition-colors group-hover:text-purple-600 dark:text-zinc-100 dark:group-hover:text-purple-600">
+                        SMA Negeri 1 Nganjuk
+                      </h3>
+                      <span className="text-sm font-medium text-zinc-400">
+                        2020 — 2023
+                      </span>
+                    </div>
+                    <p className="font-medium text-zinc-600 dark:text-zinc-400">
+                      MIPA – Mathematics and Science
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
+            </a>
           </div>
         </section>
 
         {/* ================= SECTION EXPERIENCE ================= */}
-        <section id="experience" className="py-10">
+        <section id="experience" className="scroll-mt-20 py-10">
           <div className="flex items-center gap-2 mb-5">
             <Layers className="text-purple-600" />
             <h2 className="text-3xl font-bold tracking-tight">Experience</h2>
           </div>
+
           <div className="grid gap-6">
-            <div className="group relative rounded-2xl border border-zinc-100 bg-white p-5 transition-all duration-300 hover:border-purple-200 hover:shadow-xl hover:shadow-purple-500/5 dark:border-zinc-800 dark:bg-zinc-900/50">
-              <div className="flex items-start gap-4">
-                <div className="relative h-12 w-12 flex-shrink-0 overflow-hidden rounded-xl border border-zinc-100 bg-zinc-50 p-2 dark:border-zinc-700 dark:bg-zinc-800">
-                  <Image src="/image/Logo-TSI.png" alt="Logo TSI" fill className="object-contain p-1" />
-                </div>
-                <div className="flex-1">
-                  <div className="flex flex-col md:flex-row md:items-center justify-between gap-1">
-                    <h3 className="text-lg font-bold text-zinc-800 dark:text-zinc-100 group-hover:text-purple-600 transition-colors">
-                      PT. Truspices Indonesia — Sidoarjo
-                    </h3>
-                    <span className="text-sm font-medium text-zinc-400">June – August 2025</span>
-                  </div>
-                  <p className="text-zinc-600 dark:text-zinc-400 font-medium">Admin Warehouse</p>
-                </div>
-              </div>
-            </div>
-            <div className="group relative rounded-2xl border border-zinc-100 bg-white p-5 transition-all duration-300 hover:border-purple-200 hover:shadow-xl hover:shadow-purple-500/5 dark:border-zinc-800 dark:bg-zinc-900/50">
-              <div className="flex items-start gap-4">
-                <div className="relative h-12 w-12 flex-shrink-0 overflow-hidden rounded-xl border border-zinc-100 bg-zinc-50 p-2 dark:border-zinc-700 dark:bg-zinc-800">
-                  <Image src="/image/Logo-HMJTI.png" alt="Logo HMJTI" fill className="object-contain p-1"/>
-                </div>
-                <div className="flex-1">
-                  <div className="flex flex-col md:flex-row md:items-center justify-between gap-1">
-                    <h3 className="text-lg font-bold text-zinc-800 dark:text-zinc-100 group-hover:text-purple-600 transition-colors">
-                      Himpunan Mahasiswa Jurusan Teknologi Informasi (HMJ TI)
-                    </h3>
-                    <span className="text-sm font-medium text-zinc-400">January – December 2024</span>
-                  </div>
-                  <p className="text-zinc-600 dark:text-zinc-400 font-medium">Treasurer</p>
-                </div>
-              </div>
-            </div>
+            <ExperienceItem
+              logo="/image/Logo-TSI.png"
+              alt="Logo TSI"
+              title="PT. Truspices Indonesia — Sidoarjo"
+              date="June – August 2025"
+              role="Admin Warehouse"
+              description="Responsible for managing warehouse administrative data, recording incoming and outgoing goods, and ensuring accurate documentation to support operational efficiency."
+            />
+
+            <ExperienceItem
+              logo="/image/Logo-HMJTI.png"
+              alt="Logo HMJTI"
+              title="Himpunan Mahasiswa Jurusan Teknologi Informasi (HMJ TI)"
+              date="January – December 2024"
+              role="Treasurer"
+              description="Managed organizational finances, prepared financial reports, recorded income and expenses, and ensured transparency and accountability of funds."
+            />
           </div>
         </section>
 
-        {/* ================= SECTION PROJETC ================= */}
-        <section id="project" className="py-10">
+        {/* ================= SECTION PROJECT ================= */}
+        <section id="project" className="scroll-mt-20 py-10">
           <div className="mb-5 flex items-center gap-2">
             <Code className="text-purple-600" />
             <h2 className="text-3xl font-bold tracking-tight">Project</h2>
           </div>
           <div className="grid gap-8 md:grid-cols-3">
-            {/* ================= PROJECT CARD ================= */}
             {[
               {
                 title: "SABI - Sahabat Cabai",
@@ -218,7 +246,7 @@ export default function Home() {
                     {project.desc}
                   </p>
 
-                  {/* BUTTON (SELALU DI BAWAH) */}
+                  {/* BUTTON*/}
                   <div className="mt-auto">
                     <a
                       href={project.link}
@@ -236,6 +264,61 @@ export default function Home() {
           </div>
         </section>
 
+        {/* ================= SECTION CONTACT ================= */}
+        <section id="contact" className="scroll-mt-20 py-20">
+          <div className="mb-10 flex flex-col items-center text-center">
+            <div className="mb-3 flex items-center gap-2 rounded-full bg-purple-50 px-4 py-1.5 text-sm font-medium text-purple-600 dark:bg-purple-900/20 dark:text-purple-400">
+              <Mail className="h-4 w-4" />
+              <span>Get In Touch</span>
+            </div>
+            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
+              Let’s Work Together
+            </h2>
+            <p className="mt-4 max-w-2xl text-sm sm:text-base text-zinc-600 dark:text-zinc-400">
+              I am currently open to new opportunities and collaborations.
+              Whether you have a question or just want to say hi, I’ll try my best
+              to get back to you!
+            </p>
+          </div>
+          <div className="grid gap-6 sm:grid-cols-2">
+            <a
+              href="mailto:nadhifatusae@gmail.com"
+              aria-label="Send email"
+              className="group flex items-center gap-4 rounded-2xl border border-zinc-100 bg-white p-5 sm:p-6 transition-all duration-300 hover:-translate-y-1 hover:border-purple-200 hover:shadow-xl hover:shadow-purple-500/5 dark:border-zinc-800 dark:bg-zinc-900/50"
+            >
+              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-zinc-50 text-zinc-600 transition-colors group-hover:bg-purple-600 group-hover:text-white dark:bg-zinc-800 dark:text-zinc-50 dark:group-hover:bg-purple-600">
+                <Mail className="h-6 w-6" />
+              </div>
+              <div className="min-w-0">
+                <h3 className="text-sm font-medium text-zinc-500 dark:text-zinc-400">
+                  Email Me
+                </h3>
+                <p className="truncate text-base sm:text-lg font-bold text-zinc-800 dark:text-zinc-100">
+                  nadhifatusae@gmail.com
+                </p>
+              </div>
+            </a>
+            <a
+              href="https://www.instagram.com/ersyaulia_"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Send Instagram DM"
+              className="group flex items-center gap-4 rounded-2xl border border-zinc-100 bg-white p-5 sm:p-6 transition-all duration-300 hover:-translate-y-1 hover:border-purple-200 hover:shadow-xl hover:shadow-purple-500/5 dark:border-zinc-800 dark:bg-zinc-900/50"
+            >
+              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-zinc-50 text-zinc-600 transition-colors group-hover:bg-purple-600 group-hover:text-white dark:bg-zinc-800 dark:text-zinc-50 dark:group-hover:bg-purple-600">
+                <Instagram className="h-6 w-6" />
+              </div>
+              <div className="min-w-0">
+                <h3 className="text-sm font-medium text-zinc-500 dark:text-zinc-400">
+                  DM Me
+                </h3>
+                <p className="truncate text-base sm:text-lg font-bold text-zinc-800 dark:text-zinc-100">
+                  instagram.com/ersyaulia_
+                </p>
+              </div>
+            </a>
+          </div>
+        </section>
       </div>
     </main>
   );
