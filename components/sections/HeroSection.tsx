@@ -39,8 +39,8 @@ export default function HeroSection() {
           </div>
         </div>
 
-        <div className="relative opacity-0 translate-x-6 animate-[fadeSide_1s_ease-out_0.3s_forwards]">
-          <div className="relative h-56 w-56 overflow-hidden rounded-2xl border rotate-3 transition-transform hover:rotate-0 sm:h-72 sm:w-72 shadow-2xl">
+        <div className="relative opacity-0 translate-x animate-[fadeSide_1s_ease-out_0.3s_forwards]">
+          <div className="relative h-56 w-56 overflow-hidden rounded-2xl border rotate-2 transition-transform hover:rotate-0 sm:h-72 sm:w-72 shadow-2xl">
             <Image
               src="/image/Foto.jpeg"
               alt="Nadhifatus Aulia Enggarsya"
