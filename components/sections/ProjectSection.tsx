@@ -13,14 +13,14 @@ export default function HeroSection() {
               {
                 title: "SABI - Sahabat Cabai",
                 desc: "A smart farming platform that combines IoT sensors for plant monitoring and SVM-based image processing to detect chili leaf diseases early and ensure optimal crop health.",
-                tech: ["PHP", "Laravel", "Tailwind CSS", "JavaScript"],
+                tech: ["PHP", "Laravel", "Blade", "Tailwind CSS", "JavaScript", "MariaDB"],
                 image: "/image/SABI.png",
                 link: "https://github.com/nadhiuuu/sabi-sahabat_cabai",
               },
               {
                 title: "JTI Care",
                 desc: "A web-based donation platform for the Information Technology Department, built with Laravel 10 and Midtrans to support secure and accessible donations for students in need.",
-                tech: ["PHP", "Laravel", "Tailwind CSS", "JavaScript"],
+                tech: ["PHP", "Laravel", "Blade", "SCSS/CSS", "JavaScript", "MySQL", "Midtrans SDK"],
                 image: "/image/JTICare.jpeg",
                 link: "https://github.com/nadhiuuu/jticare",
               },
