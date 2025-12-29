@@ -40,7 +40,7 @@ export default function ExperienceItem({
 
         <div className="flex-1">
           <div className="flex items-start justify-between gap-2">
-            <h3 className="text-lg font-bold text-zinc-800 transition-colors
+            <h3 className="font-sans text-lg font-bold text-zinc-800 transition-colors
             group-hover:text-purple-600 dark:text-zinc-100 dark:group-hover:text-purple-600">
               {title}
             </h3>
@@ -69,7 +69,7 @@ export default function ExperienceItem({
           open ? "max-h-40 mt-4 opacity-100" : "max-h-0 opacity-0"
         }`}
       >
-        <p className="text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
+        <p className="font-sans text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
           {description}
         </p>
       </div>
