@@ -6,7 +6,7 @@ export default function HeroSection() {
     <section id="education" className="scroll-mt-20 py-10">
           <div className="mb-5 flex items-center gap-2">
             <GraduationCap className="h-8 w-8 text-purple-600" />
-            <h2 className="font-sans text-3xl font-bold tracking-tight">Education</h2>
+            <h2 className="text-3xl font-bold tracking-tight">Education</h2>
           </div>
           <div className="grid gap-6">
             <a
@@ -32,14 +32,14 @@ export default function HeroSection() {
                   </div>
                   <div className="flex-1">
                     <div className="flex flex-col gap-1 md:flex-row md:items-center md:justify-between">
-                      <h3 className="font-sans text-lg font-bold text-zinc-800 transition-colors group-hover:text-purple-600 dark:text-zinc-100 dark:group-hover:text-purple-600">
+                      <h3 className="text-lg font-bold text-zinc-800 transition-colors group-hover:text-purple-600 dark:text-zinc-100 dark:group-hover:text-purple-600">
                         Politeknik Negeri Jember
                       </h3>
-                      <span className="font-sans text-sm font-medium text-zinc-400">
+                      <span className="text-sm font-medium text-zinc-400">
                         2023 — Present
                       </span>
                     </div>
-                    <p className="font-sans font-medium text-zinc-600 dark:text-zinc-400">
+                    <p className="font-medium text-zinc-600 dark:text-zinc-400">
                       Bachelor of Informatics Engineering
                     </p>
                   </div>
@@ -69,14 +69,14 @@ export default function HeroSection() {
                   </div>
                   <div className="flex-1">
                     <div className="flex flex-col gap-1 md:flex-row md:items-center md:justify-between">
-                      <h3 className="font-sans text-lg font-bold text-zinc-800 transition-colors group-hover:text-purple-600 dark:text-zinc-100 dark:group-hover:text-purple-600">
+                      <h3 className="text-lg font-bold text-zinc-800 transition-colors group-hover:text-purple-600 dark:text-zinc-100 dark:group-hover:text-purple-600">
                         SMA Negeri 1 Nganjuk
                       </h3>
-                      <span className="font-sans text-sm font-medium text-zinc-400">
+                      <span className="text-sm font-medium text-zinc-400">
                         2020 — 2023
                       </span>
                     </div>
-                    <p className="font-sans font-medium text-zinc-600 dark:text-zinc-400">
+                    <p className="font-medium text-zinc-600 dark:text-zinc-400">
                       MIPA – Mathematics and Science
                     </p>
                   </div>

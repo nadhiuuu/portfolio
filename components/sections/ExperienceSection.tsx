@@ -6,7 +6,7 @@ export default function HeroSection() {
     <section id="experience" className="scroll-mt-20 py-10">
           <div className="flex items-center gap-2 mb-5">
             <Layers className="text-purple-600" />
-            <h2 className="font-sans text-3xl font-bold tracking-tight">Experience</h2>
+            <h2 className="text-3xl font-bold tracking-tight">Experience</h2>
           </div>
 
           <div className="grid gap-6">

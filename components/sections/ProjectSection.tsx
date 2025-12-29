@@ -6,7 +6,7 @@ export default function HeroSection() {
     <section id="project" className="scroll-mt-20 py-10">
           <div className="mb-5 flex items-center gap-2">
             <Code className="text-purple-600" />
-            <h2 className="font-sans text-3xl font-bold tracking-tight">Project</h2>
+            <h2 className="text-3xl font-bold tracking-tight">Project</h2>
           </div>
           <div className="grid gap-8 md:grid-cols-3">
             {[
@@ -49,12 +49,12 @@ export default function HeroSection() {
                   </div>
 
                   {/* TITLE */}
-                  <h3 className="font-sans mb-2 text-xl font-bold transition-colors group-hover:text-purple-600">
+                  <h3 className="mb-2 text-xl font-bold transition-colors group-hover:text-purple-600">
                     {project.title}
                   </h3>
 
                   {/* DESCRIPTION */}
-                  <p className="font-sans mb-6 text-sm leading-relaxed text-zinc-500 dark:text-zinc-400">
+                  <p className="mb-6 text-sm leading-relaxed text-zinc-500 dark:text-zinc-400">
                     {project.desc}
                   </p>
 
@@ -64,7 +64,7 @@ export default function HeroSection() {
                       href={project.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="font-sans flex w-full items-center justify-center gap-2 rounded-xl bg-zinc-900 px-4 py-2.5 text-sm font-medium text-white transition-all hover:bg-zinc-700 active:scale-95 dark:bg-white dark:text-black dark:hover:bg-zinc-200"
+                      className="flex w-full items-center justify-center gap-2 rounded-xl bg-zinc-900 px-4 py-2.5 text-sm font-medium text-white transition-all hover:bg-zinc-700 active:scale-95 dark:bg-white dark:text-black dark:hover:bg-zinc-200"
                     >
                       <Github className="h-4 w-4" />
                       Code
