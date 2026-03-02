@@ -1,52 +1,64 @@
-import Link from "next/link";
-import { Github, Linkedin, Instagram, Mail } from "lucide-react";
+import { Github, Linkedin, Instagram, Mail, Leaf } from "lucide-react";
 
 export default function Footer() {
+  const year = new Date().getFullYear();
+
+  const socials = [
+    {
+      label: "GitHub",
+      href: "https://github.com/nadhiuuu",
+      icon: Github,
+    },
+    {
+      label: "LinkedIn",
+      href: "https://linkedin.com/in/nadhifatusae",
+      icon: Linkedin,
+    },
+    {
+      label: "Instagram",
+      href: "https://www.instagram.com/ersyaulia_",
+      icon: Instagram,
+    },
+    {
+      label: "Email",
+      href: "mailto:nadhifatusae@gmail.com",
+      icon: Mail,
+    },
+  ];
+
   return (
-    <footer className="border-t border-zinc-200 bg-white dark:border-zinc-800 dark:bg-black">
-      <div className="mx-auto max-w-5xl px-4 py-8">
-        <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
-          {/* Copyright */}
-          <p className="text-sm text-zinc-600 dark:text-zinc-400">
-            © {new Date().getFullYear()} Nadhifatus Aulia Enggarsya. All rights reserved.
-          </p>
+    <footer className="border-t border-emerald-200/40 bg-white/60 backdrop-blur dark:border-emerald-900/30 dark:bg-zinc-950/50">
+      <div className="mx-auto max-w-5xl px-4 py-10">
+        <div className="flex flex-col items-center justify-between gap-6 sm:flex-row">
+          {/* Left */}
+          <div className="flex flex-col items-center gap-2 text-center sm:items-start sm:text-left">
+            <div className="flex items-center gap-2 text-emerald-700 dark:text-emerald-300">
+              <Leaf className="h-4 w-4" />
+              <span className="text-sm font-semibold">Nadhifatus Aulia Enggarsya</span>
+            </div>
 
-          {/* Social Media */}
-          <div className="flex items-center gap-4">
-            <Link
-              href="https://github.com/nadhiuuu"
-              target="_blank"
-              aria-label="GitHub"
-              className="text-zinc-600 transition-colors hover:text-purple-600 dark:text-zinc-400 dark:hover:text-purple-500"
-            >
-              <Github size={18} />
-            </Link>
+            <p className="text-xs text-zinc-600 dark:text-zinc-400">
+              © {year} All rights reserved.
+            </p>
+          </div>
 
-            <Link
-              href="https://linkedin.com/in/nadhifatusae"
-              target="_blank"
-              aria-label="LinkedIn"
-              className="text-zinc-600 transition-colors hover:text-purple-600 dark:text-zinc-400 dark:hover:text-purple-500"
-            >
-              <Linkedin size={18} />
-            </Link>
-
-            <Link
-              href="https://www.instagram.com/ersyaulia_"
-              target="_blank"
-              aria-label="Instagram"
-              className="text-zinc-600 transition-colors hover:text-purple-600 dark:text-zinc-400 dark:hover:text-purple-500"
-            >
-              <Instagram size={18} />
-            </Link>
-
-            <Link
-              href="mailto:nadhifatusae@gmail.com"
-              aria-label="Email"
-              className="text-zinc-600 transition-colors hover:text-purple-600 dark:text-zinc-400 dark:hover:text-purple-500"
-            >
-              <Mail size={18} />
-            </Link>
+          {/* Right */}
+          <div className="flex items-center gap-2">
+            {socials.map(({ label, href, icon: Icon }) => (
+              <a
+                key={label}
+                href={href}
+                target={href.startsWith("mailto:") ? undefined : "_blank"}
+                rel={href.startsWith("mailto:") ? undefined : "noopener noreferrer"}
+                aria-label={label}
+                className="group inline-flex h-10 w-10 items-center justify-center rounded-full border border-emerald-200/40 bg-white/60 text-zinc-600 shadow-sm transition-all
+                hover:-translate-y-0.5 hover:border-emerald-300/50 hover:bg-emerald-50 hover:text-emerald-700 hover:shadow-md
+                active:translate-y-0 active:scale-[0.98]
+                dark:border-emerald-900/30 dark:bg-zinc-950/30 dark:text-zinc-300 dark:hover:bg-emerald-950/40 dark:hover:text-emerald-300"
+              >
+                <Icon className="h-[18px] w-[18px]" />
+              </a>
+            ))}
           </div>
         </div>
       </div>

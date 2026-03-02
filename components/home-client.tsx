@@ -3,7 +3,7 @@ import HeroSection from "@/components/sections/HeroSection";
 import EducationSection from "@/components/sections/EducationSection";
 import ExperienceSection from "@/components/sections/ExperienceSection";
 import ProjectSection from "@/components/sections/ProjectSection";
-import ContactSection from "@/components/sections/ContactSection";
+import ConnectSection from "@/components/sections/ConnectSection";
 import dynamic from "next/dynamic";
 
 const BgSparkles = dynamic(
@@ -21,7 +21,7 @@ export default function HomeClient() {
         <EducationSection />
         <ExperienceSection />
         <ProjectSection />
-        <ContactSection />
+        <ConnectSection />
       </div>
     </main>
   );
