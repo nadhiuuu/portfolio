@@ -25,7 +25,6 @@ const educationItems = [
 export default function EducationSection() {
   return (
     <section id="education" className="scroll-mt-20 py-12">
-      {/* Title */}
       <div className="mb-7 flex items-center gap-3">
         <div className="grid h-11 w-11 place-items-center rounded-2xl border border-emerald-200/60 bg-emerald-50/70 text-emerald-700 shadow-sm backdrop-blur dark:border-emerald-900/40 dark:bg-emerald-950/30 dark:text-emerald-300">
           <GraduationCap className="h-6 w-6" />
@@ -40,10 +39,7 @@ export default function EducationSection() {
           </p>
         </div>
       </div>
-
-      {/* Timeline */}
       <div className="relative pl-6">
-        {/* vertical line */}
         <div aria-hidden className="absolute left-2 top-1 h-full w-px bg-gradient-to-b from-emerald-300/60 via-emerald-200/30 to-transparent dark:from-emerald-700/40 dark:via-emerald-800/20"/>
         <div className="grid gap-5">
           {educationItems.map((item) => (
