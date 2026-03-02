@@ -9,7 +9,7 @@ export default function HeroSection() {
         <div className="relative opacity-0 animate-[fadeSide_1s_ease-out_0.3s_forwards]">
           <div aria-hidden className="absolute -inset-8 -z-10 rounded-full bg-emerald-300/25 blur-3xl dark:bg-emerald-500/10"/>
           <div className="relative h-60 w-60 overflow-hidden rounded-full border border-emerald-200/60 bg-white/40 shadow-xl ring-2 ring-emerald-200/40 transition-all duration-500 hover:scale-105 sm:h-72 sm:w-72 dark:border-emerald-900/40 dark:bg-zinc-950/30 dark:ring-emerald-900/40">
-            <Image src="/image/Foto_2.jpeg" alt="Nadhifatus Aulia Enggarsya" fill className="object-cover transition-transform duration-700 hover:scale-110"priority/>
+            <Image src="/image/Foto 2.jpeg" alt="Nadhifatus Aulia Enggarsya" fill className="object-cover transition-transform duration-700 hover:scale-110"priority/>
             <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-white/10 dark:from-black/30 dark:to-transparent" />
           </div>
         </div>
