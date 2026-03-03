@@ -2,6 +2,7 @@
 import HeroSection from "@/components/sections/HeroSection";
 import EducationSection from "@/components/sections/EducationSection";
 import ExperienceSection from "@/components/sections/ExperienceSection";
+import AchievementSection from "@/components/sections/AchievementSection";
 import ProjectSection from "@/components/sections/ProjectSection";
 import ConnectSection from "@/components/sections/ConnectSection";
 import dynamic from "next/dynamic";
@@ -20,6 +21,7 @@ export default function HomeClient() {
         <HeroSection />
         <EducationSection />
         <ExperienceSection />
+        <AchievementSection />
         <ProjectSection />
         <ConnectSection />
       </div>

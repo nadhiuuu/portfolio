@@ -19,19 +19,11 @@ export default function ExperienceSection() {
         </div>
       </div>
 
-      {/* Timeline (match Education) */}
       <div className="relative pl-6">
-        <div
-          aria-hidden
-          className="absolute left-2 top-1 h-full w-px bg-gradient-to-b from-emerald-300/60 via-emerald-200/30 to-transparent dark:from-emerald-700/40 dark:via-emerald-800/20"
-        />
-
+        <div aria-hidden className="absolute left-2 top-1 h-full w-px bg-gradient-to-b from-emerald-300/60 via-emerald-200/30 to-transparent dark:from-emerald-700/40 dark:via-emerald-800/20"/>
         <div className="grid gap-6">
           <div className="relative">
-            <div
-              aria-hidden
-              className="absolute -left-[22px] top-7 h-3.5 w-3.5 rounded-full border border-emerald-200 bg-emerald-100 shadow-sm dark:border-emerald-900/40 dark:bg-emerald-950"
-            />
+            <div aria-hidden className="absolute -left-[22px] top-7 h-3.5 w-3.5 rounded-full border border-emerald-200 bg-emerald-100 shadow-sm dark:border-emerald-900/40 dark:bg-emerald-950"/>
             <ExperienceItem
               logo="/image/Logo-TSI.png"
               alt="Logo TSI"
@@ -43,10 +35,7 @@ export default function ExperienceSection() {
           </div>
 
           <div className="relative">
-            <div
-              aria-hidden
-              className="absolute -left-[22px] top-7 h-3.5 w-3.5 rounded-full border border-emerald-200 bg-emerald-100 shadow-sm dark:border-emerald-900/40 dark:bg-emerald-950"
-            />
+            <div aria-hidden className="absolute -left-[22px] top-7 h-3.5 w-3.5 rounded-full border border-emerald-200 bg-emerald-100 shadow-sm dark:border-emerald-900/40 dark:bg-emerald-950"/>
             <ExperienceItem
               logo="/image/Logo-HMJTI.png"
               alt="Logo HMJTI"

@@ -12,6 +12,7 @@ import {
   Moon,
   GraduationCap,
   Layers,
+  Award,
 } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
@@ -25,6 +26,7 @@ const navItems = [
   { name: "Home", href: "#home", icon: Sparkles },
   { name: "Education", href: "#education", icon: GraduationCap },
   { name: "Experience", href: "#experience", icon: Layers },
+  { name: "Achievements", href: "#achievement", icon: Award },
   { name: "Project", href: "#project", icon: Code },
   { name: "Connect", href: "#connect", icon: Handshake  },
 ];
