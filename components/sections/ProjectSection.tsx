@@ -4,6 +4,13 @@ import { Button } from "@/components/ui/button";
 
 const projects = [
   {
+    title: "AkuPeduli",
+    desc: "A disaster fundraising platform for Jember built using Laravel, Blade, Tailwind CSS, MySQL, and Midtrans integration for transparent and verified donation campaigns.",
+    tech: ["PHP", "Laravel", "Blade", "SCSS/CSS", "JavaScript", "MySQL", "Midtrans SDK"],
+    image: "/image/Akupeduli.jpg",
+    code: "https://github.com/nadhiuuu/akupeduli",
+  },
+  {
     title: "SABI - Sahabat Cabai",
     desc: "A smart farming platform that combines IoT sensors for plant monitoring and SVM-based image processing to detect chili leaf diseases early and ensure optimal crop health.",
     tech: ["PHP", "Laravel", "Blade", "Tailwind CSS", "JavaScript", "MariaDB"],
